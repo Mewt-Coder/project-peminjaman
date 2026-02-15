@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) === 1) {
     if (trim($password) === trim($user['password'])) {
 
         $_SESSION['login'] = true;
-        $_SESSION['id'] = $user['id'];
+        $_SESSION['user_id'] = $user['user_id']; 
         $_SESSION['username'] = $user['username'];
         $_SESSION['role'] = $user['role'];
 
@@ -28,23 +28,18 @@ if (mysqli_num_rows($result) === 1) {
             header("Location: ../petugas/dashboard.php");
         } elseif ($user['role'] === 'peminjam') {
             header("Location: ../peminjam/dashboard.php");
-        } else {
-            header("Location: ../login/login.php?error=role");
         }
-        exit;
 
-    } else {
-        //  password salah
-        $_SESSION['error'] = "Username or Password is incorrect";
-        header("Location: login.php");
         exit;
     }
 
-    } else {
-        //  username tidak ditemukan
-        $_SESSION['error'] = "Username not found";
-        header("Location: login.php");
-        exit;
-    }
+    $_SESSION['error'] = "Username or Password is incorrect";
+    header("Location: login.php");
+    exit;
+}
+
+$_SESSION['error'] = "Username not found";
+header("Location: login.php");
+exit;
 
 ?>

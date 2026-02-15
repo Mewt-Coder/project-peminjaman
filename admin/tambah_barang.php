@@ -39,7 +39,7 @@
                 <a href="../admin/daftar_user.php"
                    class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     <img src="../icon/icon_user.svg" alt="User Icon" class="w-4 h-4">
-                    <span>Daftar User</span>
+                    <span>Daftar User</span> 
                 </a>
             </li>
             <li>
