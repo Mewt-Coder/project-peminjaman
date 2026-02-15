@@ -24,7 +24,7 @@ $query = mysqli_query($koneksi, "
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petugas Dashboard</title>
+    <title>Peminjam Dashboard</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -139,7 +139,7 @@ $query = mysqli_query($koneksi, "
                 </td>
                 <td>
                     <?php if ($data['status'] == 'approved') : ?>
-                        <a href="proses_pinjam.php?id=<?= $data['id_peminjaman'] ?>"
+                        <a href="kembalikan.php?id=<?= $data['id_peminjaman']; ?>"
                         onclick="return confirm('Yakin mau kembalikan barang?')"
                         class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
                         Kembalikan

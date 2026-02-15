@@ -21,7 +21,7 @@ $data_barang = mysqli_fetch_assoc($q2);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petugas Dashboard</title>
+    <title>Peminjam Dashboard</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="bg-gray-100 min-h-screen">

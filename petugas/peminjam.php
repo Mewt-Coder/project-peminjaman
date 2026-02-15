@@ -44,7 +44,7 @@ $data_barang = mysqli_fetch_assoc($q2);
             </li>
 
             <li>
-                <a href="../petugas/peminjaman.php"
+                <a href="../petugas/peminjam.php"
                    class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     <img src="../icon/folder.png" class="w-4 h-4">
                     Data Peminjaman

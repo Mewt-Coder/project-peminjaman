@@ -37,7 +37,7 @@ $kategori_list = mysqli_fetch_all($query_kategori, MYSQLI_ASSOC);
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Peminjam</title>
+<title>Peminjam Dashboard</title>
 <link rel="stylesheet" href="../src/output.css">
 </head>
 
